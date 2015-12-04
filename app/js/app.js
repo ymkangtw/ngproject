@@ -1,5 +1,5 @@
 ﻿angular
-    .module('pmapp', ['ui.router', 'ngCookies', 'ngMaterial', 'firebase', 'as.sortable'])
+    .module('pmapp', ['ui.router', 'ngCookies', 'ngMaterial', 'firebase', 'vAccordion', 'as.sortable'])
     .config(function($stateProvider, $urlRouterProvider, $mdThemingProvider) {
         //angular-material theme
         $mdThemingProvider.definePalette("docs-blue", $mdThemingProvider.extendPalette('blue', {
