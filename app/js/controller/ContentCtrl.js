@@ -51,6 +51,9 @@
             }]
         }];
         self.sortableOptions = {
+            //accept: function() {return false;},
+            //clone: true,
+            //allowDuplicates: true,
             containment: '#sortable-container',
             itemMoved: function(event) {
                 //console.log(self.itemlist1, self.itemlist2, self.itemlist3);

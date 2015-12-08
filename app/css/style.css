@@ -135,9 +135,11 @@ md-grid-tile {
     padding: 5px 5px 5px 5px;
     margin: 10px 0px 10px 0px;
 }
+
 .jobitem {
     height: 200px;
 }
+
 .jobname {
     height: 40%;
     padding: 5px 5px 5px 5px;
@@ -154,6 +156,7 @@ md-grid-tile {
     height: 20%;
 }
 */
+
 .progress {
     position: relative;
 }
@@ -163,4 +166,20 @@ md-grid-tile {
     display: block;
     width: 100%;
     color: black;
+}
+/*ngsortable css*/
+
+.as-sortable-placeholder {
+    border: 1px dashed #0000ff !important;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    display: inline;
+    /*
+    list-style-type: none;
+    text-decoration: none;
+    */
 }
