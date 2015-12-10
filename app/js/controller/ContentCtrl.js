@@ -23,7 +23,7 @@
                 };
         */
         self.columnlist = [{
-            name: 'backlog',
+            name: '等待',
             tasklist: [{
                 name: 'task01'
             }, {
@@ -32,7 +32,7 @@
                 name: 'task03'
             }]
         }, {
-            name: 'in progress',
+            name: '進行中',
             tasklist: [{
                 name: 'task04'
             }, {
@@ -41,7 +41,7 @@
                 name: 'task06'
             }]
         }, {
-            name: 'done',
+            name: '完成',
             tasklist: [{
                 name: 'task07'
             }, {
@@ -54,9 +54,10 @@
             //accept: function() {return false;},
             //clone: true,
             //allowDuplicates: true,
-            containment: '#sortable-container',
+            containment: '#board',
             itemMoved: function(event) {
                 //console.log(self.itemlist1, self.itemlist2, self.itemlist3);
+                event.source.itemScope.modelValue.status = event.dest.sortableScope.$parent.column.name;
                 console.log(self.columnlist);
                 //console.log(JSON.stringify(self.items));
             }

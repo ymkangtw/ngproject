@@ -177,9 +177,28 @@ ul,
 li {
     margin: 0;
     padding: 0;
+}
+/*
+ul,
+li {
+    margin: 0;
+    padding: 0;
     display: inline;
-    /*
     list-style-type: none;
     text-decoration: none;
-    */
 }
+*/
+/*
+.column {
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    height: 200px;
+    line-height: 2em;
+    border: 1px solid #ccc;
+    padding: 0;
+    margin: 0;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+*/

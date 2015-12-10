@@ -1,16 +1,36 @@
-﻿<md-content flex layout-padding>
+﻿<!--
+<md-content flex layout-padding>
     <div layout="row" layout-fill layout-align="top left">
         <div ng-repeat="column in ctCtrl.columnlist" data-columnindex="{{$index}}" id="column{{$index}}">
             <md-card style="height:40px;width:150px;" layout-align="center center" ng-bind="column.name">
             </md-card>
-            <ul as-sortable="ctCtrl.sortableOptions" ng-model="column.tasklist">
+            <ul class="column" as-sortable="ctCtrl.sortableOptions" ng-model="column.tasklist">
+
                 <li ng-repeat="task in column.tasklist" as-sortable-item class="as-sortable-item">
-                    <div class="md-media-lg card-media" as-sortable-item-handle class="as-sortable-item-handle">
-                        <md-card style="height:50px;width:150px;" layout-align="center center" ng-bind="task.name">
+                    <div class="md-media-lg card-media" as-sortable-item-handle>
+                        <md-card style="height:40px;width:150px;" layout-align="center center" ng-bind="task.name">
                         </md-card>
                     </div>
                 </li>
+
             </ul>
         </div>
     </div>
 </md-content>
+-->
+    <div ng-model="ctCtrl.columnlist" id="board">
+        <div ng-repeat="column in ctCtrl.columnlist" data-columnindex="{{$index}}" id="column{{$index}}">
+            <div ng-bind="column.name">
+            </div>
+            <ul as-sortable="ctCtrl.sortableOptions" ng-model="column.tasklist">
+
+                <li ng-repeat="task in column.tasklist" as-sortable-item class="as-sortable-item">
+                    <div as-sortable-item-handle>
+                        <span ng-bind="task.name">
+                        </span>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
